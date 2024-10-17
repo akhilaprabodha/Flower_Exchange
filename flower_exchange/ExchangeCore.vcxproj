@@ -131,7 +131,7 @@
     <ClCompile Include="ReportCSVWriter.cpp" />
     <ClCompile Include="ExchangeCore.cpp" />
     <ClCompile Include="OrderManager.cpp" />
-    <ClCompile Include="OrderCSVReader.cpp" />
+    <ClCompile Include="CSVOrderReader.cpp" />
     <ClCompile Include="OrderSplitter.cpp" />
     <ClCompile Include="TradeProcessor.cpp" />
     <ClCompile Include="OrderVeifier.cpp" />
@@ -141,7 +141,7 @@
     <ClInclude Include="MaxHeapHandler.h" />
     <ClInclude Include="ReportCSVWriter.h" />
     <ClInclude Include="OrderManager.h" />
-    <ClInclude Include="OrderCSVReader.h" />
+    <ClInclude Include="CSVOrderReader.h" />
     <ClInclude Include="OrderSplitter.h" />
     <ClInclude Include="TradeProcessor.h" />
     <ClInclude Include="OrderVerifier.h" />
