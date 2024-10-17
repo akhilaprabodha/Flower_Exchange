@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ExchangeCore.cpp"> <!-- Changed from FlowerExchange.cpp to ExchangeCore.cpp -->
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CSVOrderReader.cpp"> <!-- Changed from OrderCSVReader.cpp to CSVOrderReader.cpp -->
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReportCSVWriter.cpp"> <!-- Changed from ExecutionReportCSVWriter.cpp to ReportCSVWriter.cpp -->
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderVerifier.cpp"> <!-- Changed from OrderValidator.cpp to OrderVerifier.cpp -->
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeProcessor.cpp"> <!-- Changed from OrderProcessor.cpp to TradeProcessor.cpp -->
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderManager.cpp"> <!-- Changed from OrderBook.cpp to OrderManager.cpp -->
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MaxHeapHandler.cpp"> <!-- Changed from BuyMaxHeap.cpp to MaxHeapHandler.cpp -->
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MinHeapHandler.cpp"> <!-- Changed from SellMinHeap.cpp to MinHeapHandler.cpp -->
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OrderSplitter.cpp"> <!-- Changed from OrderDivider.cpp to OrderSplitter.cpp -->
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CSVOrderReader.h"> <!-- Changed from OrderCSVReader.h to CSVOrderReader.h -->
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReportCSVWriter.h"> <!-- Changed from ExecutionReportCSVWriter.h to ReportCSVWriter.h -->
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderVerifier.h"> <!-- Changed from OrderValidator.h to OrderVerifier.h -->
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeProcessor.h"> <!-- Changed from OrderProcessor.h to TradeProcessor.h -->
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderManager.h"> <!-- Changed from OrderBook.h to OrderManager.h -->
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MaxHeapHandler.h"> <!-- Changed from BuyMaxHeap.h to MaxHeapHandler.h -->
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHeapHandler.h"> <!-- Changed from SellMinHeap.h to MinHeapHandler.h -->
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OrderSplitter.h"> <!-- Changed from OrderDivider.h to OrderSplitter.h -->
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\Execution_rep.csv">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="data\order.csv">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="data\orders.csv">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
