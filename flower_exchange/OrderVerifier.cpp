@@ -216,4 +216,33 @@ void OrderVerifier::validateAllOrders(
         }
     }
 
-    std::cout << "Order Verifier || OrderCount:
+    std::cout << "Order Verifier || OrderCount: " << orderCount << " || Orders Processed: " << count << " || Orders Rejected: " << rejectedOrderIDs.size() << std::endl;
+    doneRose = true;
+    doneLavender = true;
+    doneLotus = true;
+    doneTulip = true;
+    doneOrchid = true;
+    cvRose.notify_one();
+    cvLavender.notify_one();
+    cvLotus.notify_one();
+    cvTulip.notify_one();
+    cvOrchid.notify_one();
+    doneWriting = 1;
+    cvWriter.notify_one();
+}
+
+int OrderVerifier::threadVerifier(const std::vector<std::string>& order, std::string& writerBuffer, std::mutex& writerMtx, std::condition_variable& cvWriter) {
+    bool valid = validateOrder(order);
+    if (valid) {
+        return newVerifier(order);
+    }
+    else {
+        return 0;
+    }
+}
+
+std::string OrderVerifier::getDateTime() {
+    auto now = std::chrono::system_clock::now();
+    std::time_t now_c = std::chrono::system_clock::to_time_t(now);
+    return std::ctime(&now_c);
+}
